@@ -1,0 +1,10 @@
+body {
+
+    background-image: url("../images/HxH.jpg");
+    padding: 10%;
+}
+
+.container,
+.title {
+    background-image: url("../images/gravel/gravel.png");
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Trivia Game</title>
+</head>
+
+<body>
+
+    <div class="container" id="program" style="padding:10px">
+
+
+        <h1 class="shadow p-3 mb-5 font-weight-bold text-center title" style="border-style:solid; border-color:#c9e5f1; color: #c5ad4a">HUNTER
+            X HUNTER
+            TRIVIA</h1>
+
+
+
+        <div class="shadow-sm p-3 mb-5 col-md-12" id="results-text" style="background-color:#c9e5f1;">
+            <h2 class="shadow p-3 mb-5 text-center" style="color:#c5ad4a; border-style: solid; border-color: #c5ad4a">RESULTS</h2>
+            <p class="text-center font-weight-bold" id="right-answer-text"></p>
+            <p class="text-center font-weight-bold" id="wrong-answer-text"></p>
+        </div>
+
+        <div class="col-md-12" id="game-start">
+            <button type="button" class="shadow p-3 mb-5 btn btn-danger" id="start-button" style="margin:20px; width:10%; margin-left:45%">START</button>
+        </div>
+
+        <div class="col-md-12" id="game">
+
+            <div class="text-center row-md-6" id="timer" style="margin-top:20px; margin-bottom:20px; color:red">
+
+            </div>
+
+            <div class="shadow-lg p-3 mb-5  col-md-12" style="background-color:#c9e5f1">
+
+                <div class="col-md-12">
+                    <h2 class="row">Question 1:</h2>
+                    <p class="row">Gon's Nen type is Enhancement.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="correctAns" id="trueRadios" value="correct">
+                        <label class="form-check-label" for="trueRadios">
+                            True
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="option2" id="falseRadios" value="option2">
+                        <label class="form-check-label" for="falseRadios">
+                            False
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h2 class="row">Question 2:</h2>
+                    <p class="row">Killua was born into a powerful family of assassins.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="correctAns2" id="trueRadios" value="correct">
+                        <label class="form-check-label" for="trueRadios">
+                            True
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options2" id="falseRadios" value="option2">
+                        <label class="form-check-label" for="falseRadios">
+                            False
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h2 class="row">Question 3:</h2>
+                    <p class="row">Leorio took the Hunter Exams so he could take revenge on the Phantom Troupe, who
+                        killed his entire clan.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options3" id="trueRadios" value="option1">
+                        <label class="form-check-label" for="trueRadios">
+                            True
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="correctAns3" id="falseRadios" value="correct">
+                        <label class="form-check-label" for="falseRadios">
+                            False
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h2 class="row">Question 4:</h2>
+                    <p class="row">Isaac Netero was the 13th Chairman of the Hunter's Association.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="correctAns4" id="trueRadios" value="correct">
+                        <label class="form-check-label" for="trueRadios">
+                            True
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options4" id="falseRadios" value="option2">
+                        <label class="form-check-label" for="falseRadios">
+                            False
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h2 class="row">Question 5:</h2>
+                    <p class="row">Kalluto Zoldyck, Killua's older brother and arch nemesis, is the leader of the
+                        Phantom Troupe.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options5" id="trueRadios" value="option1">
+                        <label class="form-check-label" for="trueRadios">
+                            True
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="correctAns5" id="falseRadios" value="correct">
+                        <label class="form-check-label" for="falseRadios">
+                            False
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h2 class="row">Question 6:</h2>
+                    <p class="row">Ging Freecss, Gon's estranged father, is moved to tears when he sees his son for the
+                        first time since the Chimera Ant incident.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options6" id="trueRadios" value="option1">
+                        <label class="form-check-label" for="trueRadios">
+                            True
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="correctAns6" id="falseRadios" value="correct">
+                        <label class="form-check-label" for="falseRadios">
+                            False
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <button type="button" class="shadow p-3 mb-5 btn btn-primary btn-lg" id="done-button" style="width: 10%; margin-left:45%;">Done</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
